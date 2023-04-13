@@ -3,6 +3,7 @@ import { useState } from "react";
 import Hand from "./components/Hand";
 import PlayerDeck from "./components/PlayerDeck";
 import PlayerDiscardPile from "./components/PlayerDiscardPile";
+import ThreatDiscard from "./components/ThreatDiscard";
 // import NewNote from "./components/NewNote";
 // import Notes from "./components/Notes";
 const playercards = require("./data/cards.json");
@@ -83,6 +84,8 @@ function App() {
         playCardToDiscard={playCardToDiscard}
         cardNames={cardNameList}
       />
+      <hr></hr>
+      <ThreatDiscard cards = {[]} />
     </div>
   );
 }
